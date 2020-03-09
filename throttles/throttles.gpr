@@ -1,0 +1,23 @@
+-- with "./dep/OpenGLAda/opengl";
+-- with "./dep/OpenGLAda/opengl-glfw";
+-- with "./dep/OpenGLAda/opengl-soil";
+-- with "./dep/ada-traits-containers/src/containers";
+-- with "gnatcoll";
+
+project Throttles is
+
+  for Languages   use ("ada");
+  for Object_Dir  use "obj";
+  for Exec_Dir    use "bin";
+  for Source_Dirs use (".");
+  for Main        use ("main");
+
+  package Compiler is
+    for Default_Switches ("c") use ("-O2", "-s", "-Wp,-w");
+  end Compiler;
+
+  package Linker is
+    --for Default_Switches ("Ada") use ("-Lobj/stb_image_aug.o");
+  end Linker;
+
+end Throttles;

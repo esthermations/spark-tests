@@ -1,0 +1,6 @@
+[submodule "dep/ada-traits-containers"]
+	path = dep/ada-traits-containers
+	url = https://github.com/adacore/ada-traits-containers.git
+[submodule "throttles/dep/ada-traits-containers"]
+	path = throttles/dep/ada-traits-containers
+	url = https://github.com/adacore/ada-traits-containers
